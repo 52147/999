@@ -9,15 +9,15 @@ package exceptionpractice;
  *  - the information stored in the exception object can be extracted to provide error handling.
  * 
  *  
- * - throwing an exception :
+ * - 1. throwing an exception :
  *    
  *  - The process of create Exception object.
  *  
- * - handle the exception :
+ * - 2.  handle the exception :
  * 
  *  - The code that detects and deals with the exception.
  *  
- * - thrown :
+ * - 3. thrown :
  *    
  *  - Java code can handle an exception.
  *  

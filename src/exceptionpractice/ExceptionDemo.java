@@ -91,7 +91,7 @@ public class ExceptionDemo {
 			int milkCount = keyboard.nextInt();
 			
 			if (milkCount < 1)
-				throw new Exception("Exception : No milk!"); // create a object that has a message
+				throw new Exception("Exception : No milk!"); // create a object that has a message //Exception can return a String message
 			
 			double donutPerGlass = donutCount / (double)milkCount; // put the double at dividend -> the answer will contains double.
 			

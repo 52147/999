@@ -24,7 +24,7 @@ package exceptionpractice2;
  *       - it states that an invocation of the method sampleMethod might throw a DivideByZeroException.       
  *       - throws DivideByZero -> throw clause
  *       
- * - passing the buck
+ * - passing the buck :
  *      
  *   public void methodA throws DivideByZeroException
  *   
@@ -38,9 +38,10 @@ package exceptionpractice2;
  *   For example :
  *   public int myMethod() throws IOException, DivideByZeroException    
  *   
- * - If a derived class overrides a base-class method that has a throws clause,
+ * - If a derived class(sub class) overrides a base-class method that has a throws clause,
  *   you can not add exception to the throws clause of the new overriding method.       
  * 
+ * -Key concept of throws clause in method:
  *       
  *  - A method might not catch an exception that its code throws
  *  - A method that does not handle an exception that it throws must gave a "throws clause" in its heading.
@@ -54,9 +55,7 @@ package exceptionpractice2;
  * 
  *  - throw : the keyword throws is used to throw an exception, 
  *  - throws : throws is used in a method's heading to declare an exception.
- *  - Thus, a throw statement throws an exception, but a throw clause declares one.
- * 
- *  
+ *  - Thus, a throw statement throws an exception, but a throw clause declares one. 
  *  
  * = Arithmetic exception =
  *  
@@ -65,15 +64,14 @@ package exceptionpractice2;
  * = IllegalArgumentException =
  * 
  * Thrown to indicate that a method has been passed an illegal or inappropriate argument.
- * 
- * 
- * 
- * 
- *     
+ *      
  */
 
 /**
  * = DoDivision program =
+ * 
+ *  - DivideByZeroException is an own defining Exception class.
+ *  
  *  - use this program to practice throw clause in method definition.
  *  - The normal case is in a method called doNormalCase.
  *  - This method can throw a exception DivideByZeroException, but it does not catch it.
@@ -101,7 +99,7 @@ public class DoDivision {
 
 	}
 
-	public void doNormalCase() throws DivideByZeroException { // DividedByZeroException can be changed by the ArithmeticException (this exception do not need to create a class)
+	public void doNormalCase() throws DivideByZeroException { // DividedByZeroException can be changed by the ArithmeticException (this exception does not need to create a class)
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Enter numerator :");
 
